@@ -187,3 +187,7 @@
   background: var(--background-terciary);
   transform: translateY(-3px);
 }
+
+.padding-zero {
+  padding: 0 !important; 
+}
