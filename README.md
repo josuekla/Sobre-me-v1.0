@@ -2,7 +2,7 @@
 
 Este é um projeto de **Landing Page pessoal**, criado com **HTML5, CSS3 e Bootstrap**, com o objetivo de apresentar quem sou, minhas habilidades técnicas e soft skills. A ideia principal é mostrar minha trajetória, tecnologias que domino e meu compromisso com o aprendizado contínuo.
 
-![screenshot da landing page](./assets/screenshots/preview.png)
+![screenshot da landing page](assets/img-preview/img-01.png)
 
 ## 🚀 Tecnologias Utilizadas
 
