@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --text-primary: #205781;
+    --text-secondary: #000;
+    --background-color: #f6f8d5;
+    --background-secondary: #124f64;
+    --background-terciary: #82b1ff;
+}
+
+.bg-gradient-animado {
+  background: linear-gradient(300deg, #99b3ff, rgb(241, 249, 255), #ffffff);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-gradient-custom {
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* De roxo para azul */
+  color: white;
+}
+
+.span-text{
+  color: var(--background-terciary);
+}
+
+.hero {
+    background-image: url(./assets/imgs/home_img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    color: white;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.hero-h1-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10vw;
+    margin-top: 0;
+    line-height: 0.9;
+}
+.hero-h3-text {
+    font-size: 5vw ;
+    line-height: 1;
+}
+
+.sobre-me{
+    height: 100vh; 
+    background-color: var(--background-color);
+    position: relative;
+    background-size: cover;
+}
+
+.sobre-me-content h1{
+    font-family: "Montserrat";
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 4rem !important;
+}
+.sobre-me-content p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    
+}
+
+.sobre-me-content h3 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+#hobbies{
+    background-color: var(--background-color);
+    min-height: 50vh;
+}
+
+
+
+.top-margin-custom {
+    margin-top: 3rem;
+}
+
+/* Skill-css */
+#skills-content {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.soft-skill-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.soft-skill-card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+.card-highlight-conquistas{
+  background-color: var(--background-terciary);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* img-card-conquistas {
+  background-color: var(--background-terciary);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+} */
+
+#footer {
+  background: linear-gradient(145deg, #1a1c23, #242730);
+  color: #ffffff;
+}
+
+
+.footer-title {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 30px;
+  height: 2px;
+  background: var(--background-terciary);
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: var(--background-terciary);
+  transform: translateY(-3px);
+}
